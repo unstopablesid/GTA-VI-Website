@@ -147,21 +147,67 @@ const App = () => {
             </div>
             
           </div>
-          <div className="gta6 w-full h-screen flex bg-black">
-            <div className="bag ">
-              <div className="img absolute w-full h-full">
-                <img src="./GTA-6.jpg" alt="" />
-              </div>
-            </div>
-            <div className="trailer relative flex-col w-full  top-0 left-0 ">
-              <h1 className='text-4xl '>Grand theft auto VI</h1>
-              <h1>Watch Trailer Now</h1>
-              <button className='bg-yellow-500 px-10 rounded-full text-center h-10 text-black mt-10 text-2xl'>Learn More</button>
-            </div>
+  <div className="gta6 w-full h-screen flex bg-black">
+  <div className="bag">
+    <div className="img absolute w-full h-full">
+      <img src="./GTA-6.jpg" alt="GTA 6 Cover Image" />
+    </div>
+  </div>
+  <div className="trailer relative flex flex-col items-center justify-center w-full top-0 left-0  text-white">
+    <h1 className="text-4xl font-bold">Grand Theft Auto VI</h1>
+    <h2 className="text-2xl mt-4 ">Watch Trailer Now</h2>
+    <button className="bg-yellow-500 px-10 py-2 rounded-full text-black mt-6 text-2xl hover:bg-yellow-600 transition">
+      Learn More
+    </button>
+  </div>
+</div>
+          <div className="Games w-full h-screen flex flex-col items-center justify-center bg-black">
+  <h1 className="text-center text-white text-4xl font-bold">Featured Games</h1>
+  <div className="flex gap-4 mt-6">
+    <div className="card w-[15rem]"><img src="./Gta5.jpg" alt="GTA 5" /></div>
+    <div className="card w-[15rem]"><img src="./GTAOnline.jpg" alt="GTA Online" /></div>
+    <div className="card w-[15rem]"><img src="./RDR2.jpg" alt="Red Dead Redemption 2" /></div>
+    <div className="card w-[15rem]"><img src="./RDR.jpg" alt="Red Dead Redemption" /></div>
+  </div>
+</div>
+<footer className=" bg-black text-white py-6 px-10 font-[Halevetica]">
+  <div className="container mx-auto text-center">
+    <h2 className="text-xl font-semibold">Rockstar Games</h2>
+    
+    
+    <div className="mt-6">
+      <h3 className="text-lg font-semibold">Popular Games</h3>
+      <ul className="flex justify-center space-x-6 mt-2">
+        <li>Grand Theft Auto VI</li>
+        <li>Red Dead Redemption 2</li>
+        <li>Max Payne 3</li>
+        <li>Bully</li>
+        <li>Midnight Club: Los Angeles</li>
+      </ul>
+    </div>
 
-          </div>
-          <div className="Games w-full h-screen flex bg-black">
-          </div>
+    <nav className="mt-6">
+      <h3 className="text-lg font-semibold">Quick Links</h3>
+      <ul className="flex justify-center space-x-6 mt-2">
+        <li><a href="https://www.rockstargames.com/" target="_blank" rel="noopener noreferrer" className="hover:text-yellow-500">Home</a></li>
+        <li><a href="https://support.rockstargames.com/" target="_blank" rel="noopener noreferrer" className="hover:text-yellow-500">Support</a></li>
+        <li><a href="https://www.rockstargames.com/newswire" target="_blank" rel="noopener noreferrer" className="hover:text-yellow-500">News</a></li>
+        <li><a href="https://socialclub.rockstargames.com/" target="_blank" rel="noopener noreferrer" className="hover:text-yellow-500">Social Club</a></li>
+      </ul>
+    </nav>
+
+    <div className="mt-6 flex justify-center space-x-6">
+      <a href="https://twitter.com/RockstarGames" target="_blank" rel="noopener noreferrer" className="hover:text-yellow-500">
+        Twitter
+      </a>
+      <a href="https://www.youtube.com/user/RockstarGames" target="_blank" rel="noopener noreferrer" className="hover:text-yellow-500">
+        YouTube
+      </a>
+    </div>
+
+    <p className="text-xs mt-6">© {new Date().getFullYear()} Rockstar Games, Inc. All Rights Reserved.</p>
+  </div>
+</footer>
         </div>
        </div>
       )}
